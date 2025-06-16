@@ -41,7 +41,7 @@ form.addEventListener('submit',function(event) {
         const rsvpButton = row.querySelector('.rsvp-btn')
         rsvpButton.addEventListener('click', function(){
             rsvpButton.classList.toggle('Attending')
-            rsvpButton.textContent= rsvpButton.classList.contains('Attending') ? "Attending" : "Not Attending"
+            rsvpButton.textContent= rsvpButton.classList.contains('Attending') ? "Attending" : "Not-Attending"
 
         });
     
