@@ -1,0 +1,80 @@
+body{
+    background-image:url(https://i.pinimg.com/736x/53/12/af/5312afe234f0fce341f64eb1197e0a11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    overlay: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+span{
+    text-align: center;
+    font-size: larger;
+    
+}
+form{
+    margin-top: 40px;
+}
+form select {
+    margin-right:20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+button{
+  border-radius: 5px;
+  padding: 10px;
+}
+#footer{
+   position: fixed;
+   bottom: 0;
+   margin-left: 80px;
+}
+table{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.rsvp-btn {
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.rsvp-btn.Attending {
+    background-color: green;
+    color: white;
+}
+.edit{
+    background-color:#0077Bc;
+    padding:5px 20px;
+    cursor: pointer;
+}
+.category.family{
+    color:#ff4d6d ;
+}
+.category.friend{
+    color: #a2d2ff;
+}
+.category.colleague{
+    color: #fcf6bd;
+}
+
+
