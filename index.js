@@ -2,6 +2,7 @@ const input =  document.getElementById('input')
 const select = document.getElementById('select')
 const error = document.getElementById('error')
 const tableBody = document.getElementById('guestTable').querySelector('tbody')
+const form = document.getElementById('form')
 
 form.addEventListener('submit',function(event) {
     event.preventDefault();
@@ -12,6 +13,10 @@ form.addEventListener('submit',function(event) {
     }
       if(tableBody.querySelectorAll('tr').length > 10){
         return error.textContent = "The guest list is full"
+    }
+    const existingName = Array.from(tableBody.querySelectorAll('.changeName')).map(td => td.textContent.toLowerCase())
+    if (existingName.includes(name.toLowerCase())){
+        return error.textContent = "The guest is already on the list"
     }
     
     error.textContent= "";
